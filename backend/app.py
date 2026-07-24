@@ -10,11 +10,11 @@ load_dotenv()
 
 app = Flask(__name__, static_folder='../frontend-vite/dist', static_url_path='')
 CORS(app, origins=[
-    "https://infylearn-heygen-demo.netlify.app",
+    "https://infy-heygen-demo1.onrender.com",
     "http://localhost:3000",
     "http://localhost:5173",
     "http://localhost:5000",
-])  # Allows the frontend to talk to this server
+]) # Allows the frontend to talk to this server
 
 openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
