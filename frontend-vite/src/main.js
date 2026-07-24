@@ -35,7 +35,7 @@ async function initAvatar() {
     document.getElementById('countdown-display').innerText = '';
     setStatus('Starting avatar session...');
 
-    const res = await fetch('http://localhost:5000/liveavatar/start', { method: 'POST' });
+    const res = await fetch('https://infy-heygen-demo.onrender.com/liveavatar/start', { method: 'POST' });
     const result = await res.json();
     const sessionToken = result.data.session_token;
 
@@ -83,7 +83,7 @@ async function askQuestion() {
   document.getElementById('ask-btn').disabled = true;
   setStatus('Thinking...');
 
-  const res = await fetch('http://localhost:5000/ask', {
+  const res = await fetch('https://infy-heygen-demo.onrender.com/ask', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ question })
