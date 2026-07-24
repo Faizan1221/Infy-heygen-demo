@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Infylearn — AI Assistant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #0d1117; color: #e6edf3; min-height: 100vh; }
+    .header { background: #161b22; padding: 16px 32px; border-bottom: 1px solid #30363d;
+              display: flex; align-items: center; gap: 16px; }
+    .header h1 { font-size: 20px; color: #58a6ff; }
+    .header p  { font-size: 13px; color: #8b949e; }
+    .main { display: grid; grid-template-columns: 872px 1fr;
+            gap: 24px; padding: 24px 32px; max-width: 1400px; margin: 0 auto; }
+    .avatar-panel { background: #161b22; border-radius: 12px;
+                    border: 1px solid #30363d; overflow: hidden; width: 872px; }
+    #avatar-video { width: 872px; height: 478px; background: #000;
+                    display: flex; align-items: center; justify-content: center; }
+    #avatar-video video { width: 100%; height: 100%; object-fit: cover; }
+    .avatar-status { padding: 12px 16px; font-size: 13px; color: #8b949e; }
+    .status-dot { display: inline-block; width: 8px; height: 8px;
+                  border-radius: 50%; background: #3fb950; margin-right: 6px; }
+    .right-panel { display: flex; flex-direction: column; gap: 16px; }
+    .question-area { background: #161b22; border-radius: 12px; padding: 20px;
+                      border: 1px solid #30363d; }
+    .question-area label { display: block; font-size: 13px; color: #8b949e;
+                            margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .question-area select { width: 100%; background: #0d1117; border: 1px solid #30363d;
+                              color: #e6edf3; padding: 10px 12px; border-radius: 8px;
+                              font-size: 14px; margin-bottom: 12px; }
+    .question-area input { width: 100%; background: #0d1117; border: 1px solid #30363d;
+                            color: #e6edf3; padding: 10px 12px; border-radius: 8px;
+                            font-size: 14px; }
+    .ask-btn { width: 100%; padding: 12px; background: #1f6feb; color: white;
+                border: none; border-radius: 8px; font-size: 15px; cursor: pointer;
+                margin-top: 12px; font-weight: bold; transition: background 0.2s; }
+    .ask-btn:hover { background: #388bfd; }
+    .ask-btn:disabled { background: #30363d; cursor: not-allowed; }
+    .answer-area { background: #161b22; border-radius: 12px; padding: 20px;
+                    border: 1px solid #30363d; flex: 1; }
+    .answer-area label { font-size: 13px; color: #8b949e; text-transform: uppercase;
+                          letter-spacing: 0.5px; display: block; margin-bottom: 10px; }
+    #answer-text { font-size: 15px; line-height: 1.7; color: #e6edf3; min-height: 80px; }
+    #source-citation { margin-top: 12px; font-size: 12px; color: #3fb950;
+                        padding: 8px 12px; background: #0d2a18; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="header" style="display: flex; align-items: center; gap: 12px;">
+  <img src="/src/assets/infylearn-logo-transparent.png" alt="Infylearn logo" style="height: 50px; width: auto;" />
+  <div>
+    <h1>Infylearn — AI Assistant</h1>
+    <p>Powered by AI │ New Employee Guide</p>
+  </div>
+</div>
+  <div class="main">
+    <div class="avatar-panel">
+      <div id="avatar-video">
+        <video id="avatar-stream" autoplay playsinline></video>
+      </div>
+      <div class="avatar-status">
+        <span class="status-dot"></span>
+        <span id="status-label">Click "Start Avatar" to begin</span>
+        <span id="countdown-display" style="margin-left: 12px; font-size: 13px; color: #8b949e;"></span>
+      </div>
+      <div style="padding: 16px 16px 24px;">
+        <button class="ask-btn" id="start-btn">Start Avatar</button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="question-area">
+        <label>Choose a Sample Question (or type your own below)</label>
+        <select id="sample-q" onchange="fillQuestion(this.value)">
+          <option value="">-- Select a question --</option>
+          <optgroup label="📋 Onboarding Questions">
+            <option>What is the first thing I should do on my first day at ABC Company?</option>
+            <option>What are the standard working hours at ABC Company?</option>
+            <option>Which days are considered weekends or days off at ABC Company?</option>
+            <option>Is there a grace period if I arrive late at ABC Company?</option>
+            <option>How do I request leave or time off at ABC Company?</option>
+            <option>What is the dress code at ABC Company?</option>
+            <option>When and how will I get paid at ABC Company?</option>
+            <option>What is the probation period at ABC Company?</option>
+            <option>How do I get my employee ID and access badge?</option>
+            <option>What equipment will I receive as a new employee at ABC Company?</option>
+            <option>Who is my point of contact if I have HR-related questions?</option>
+            <option>What is the annual leave entitlement at ABC Company?</option>
+            <option>What should I do if I am sick and cannot come to work?</option>
+            <option>Is there a canteen or lunch facility at ABC Company?</option>
+            <option>What is the company's policy on using personal mobile phones during work hours?</option>
+          </optgroup>
+          <optgroup label="🧾 Invoice Processing Questions">
+            <option>What is the first step when an invoice arrives at ABC Company?</option>
+            <option>What information must be captured when logging an invoice into the ERP?</option>
+            <option>What happens if an invoice does not have a Purchase Order number?</option>
+            <option>How does the AP Clerk verify an invoice against a Purchase Order?</option>
+            <option>What is the acceptable price variance between an invoice and a Purchase Order?</option>
+            <option>What does the AP Clerk do after successfully completing the three-way match?</option>
+            <option>What are the approval limits for invoice authorization at ABC Company?</option>
+            <option>How long does the Cost Center Manager have to approve or reject an invoice?</option>
+            <option>What happens when a Cost Center Manager rejects an invoice?</option>
+            <option>What is the payment timeline after an invoice is fully approved?</option>
+            <option>What should the AP Clerk do if a duplicate invoice is received?</option>
+            <option>Where are physical invoices stored after processing?</option>
+            <option>Who do I contact if the ERP system is unavailable when I need to log an invoice?</option>
+            <option>What currency must invoices be recorded in within the ERP system?</option>
+            <option>What is the correct procedure if an invoice amount does not match the goods received?</option>
+          </optgroup>
+        </select>
+        <label>Or type your own question:</label>
+        <input type="text" id="question-input" placeholder="e.g. What is the probation period?">
+        <button class="ask-btn" id="ask-btn" onclick="askQuestion()">Ask the Avatar</button>
+      </div>
+      <div class="answer-area">
+        <label>Avatar Answer</label>
+        <div id="answer-text">The avatar will answer your question here...</div>
+        <div id="source-citation" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

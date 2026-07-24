@@ -1,0 +1,84 @@
+{
+  "company": "ABC Company",
+  "process": "Invoice Processing",
+  "version": "1.0",
+  "last_updated": "2026-06-19",
+  "sub_process": "Invoice Receipt and Verification",
+  "qa_pairs": [
+    {
+      "id": "INV-001",
+      "question": "What is the first step when an invoice arrives at ABC Company?",
+      "answer": "When an invoice arrives at ABC Company, the Accounts Payable (AP) team must first log it into the ERP system within 24 hours of receipt. The AP Clerk opens the ERP system, navigates to Accounts Payable > Invoice Entry, and creates a new invoice record. The invoice must be stamped with the date received using the date stamp kept at the AP desk."
+    },
+    {
+      "id": "INV-002",
+      "question": "What information must be captured when logging an invoice into the ERP?",
+      "answer": "When logging an invoice into the ERP system, the AP Clerk must capture the following mandatory fields: Vendor Name, Vendor Invoice Number, Invoice Date, Invoice Receipt Date, Invoice Amount (in original currency), Currency Code, Purchase Order (PO) Number if applicable, and the Cost Center Code. All fields marked with an asterisk (*) in the ERP system are mandatory and cannot be left blank."
+    },
+    {
+      "id": "INV-003",
+      "question": "What happens if an invoice does not have a Purchase Order number?",
+      "answer": "If an invoice arrives without a Purchase Order (PO) number, the AP Clerk must place the invoice in the 'Pending PO' tray and send an email to the requesting department within 2 business hours asking them to provide the PO number. The email subject line must read: 'ACTION REQUIRED: Missing PO Number – Invoice [Vendor Name] – [Invoice Date]'. If no response is received within 3 business days, the AP Clerk must escalate to the AP Supervisor."
+    },
+    {
+      "id": "INV-004",
+      "question": "How does the AP Clerk verify an invoice against a Purchase Order?",
+      "answer": "To verify an invoice against a Purchase Order, the AP Clerk opens the PO in the ERP system and performs a three-way match: (1) Match the invoice vendor name with the PO vendor name — they must be identical. (2) Match the invoice line items and quantities with the PO line items — quantities on the invoice must not exceed quantities on the PO. (3) Match the invoice unit prices with the PO unit prices — a variance of more than 2% requires a price discrepancy notification to the Procurement team."
+    },
+    {
+      "id": "INV-005",
+      "question": "What is the acceptable price variance between an invoice and a Purchase Order?",
+      "answer": "ABC Company allows a maximum price variance of 2% between the invoice unit price and the PO unit price. If the variance is 2% or less, the AP Clerk may proceed with processing. If the variance exceeds 2%, the AP Clerk must raise a Price Discrepancy Form (Form AP-07), attach it to the invoice, and email it to the Procurement Manager within 1 business day. The invoice is placed on hold until the Procurement Manager approves or rejects the variance."
+    },
+    {
+      "id": "INV-006",
+      "question": "What does the AP Clerk do after successfully completing the three-way match?",
+      "answer": "After successfully completing the three-way match, the AP Clerk updates the invoice status in the ERP to 'Verified' and routes it electronically to the Cost Center Manager for approval. The Cost Center Manager receives an automatic email notification from the ERP system. The AP Clerk must also attach the scanned copy of the physical invoice to the ERP record. Invoices under $500 do not require Cost Center Manager approval and can be approved by the AP Clerk directly."
+    },
+    {
+      "id": "INV-007",
+      "question": "What are the approval limits for invoice authorization at ABC Company?",
+      "answer": "ABC Company's invoice authorization limits are as follows: AP Clerk may approve invoices up to $500. Cost Center Manager may approve invoices between $500 and $10,000. Finance Director may approve invoices between $10,000 and $50,000. CFO approval is required for any invoice exceeding $50,000. All approvals must be completed within the ERP system — verbal or email-only approvals are not acceptable as per the ABC Company Finance Policy, Section 4.2."
+    },
+    {
+      "id": "INV-008",
+      "question": "How long does the Cost Center Manager have to approve or reject an invoice?",
+      "answer": "The Cost Center Manager must approve or reject an invoice within 3 business days of receiving the ERP notification. If the Cost Center Manager does not take action within 3 business days, the ERP system automatically sends a reminder email on Day 4. If no action is taken by Day 5, the invoice is automatically escalated to the AP Supervisor, who will contact the Cost Center Manager directly."
+    },
+    {
+      "id": "INV-009",
+      "question": "What happens when a Cost Center Manager rejects an invoice?",
+      "answer": "If a Cost Center Manager rejects an invoice, they must provide a written reason for rejection inside the ERP system's Rejection Comments field — this field is mandatory and cannot be left blank. The ERP system will automatically notify the AP Clerk by email. The AP Clerk must then contact the vendor within 2 business days to communicate the rejection and the reason. The invoice status is updated to 'Rejected' in the ERP. A rejected invoice is never deleted — it remains in the system for audit purposes."
+    },
+    {
+      "id": "INV-010",
+      "question": "What is the payment timeline after an invoice is fully approved?",
+      "answer": "Once an invoice is fully approved in the ERP system, the payment is scheduled according to the vendor's payment terms. Standard payment terms at ABC Company are Net 30 (payment within 30 days of the invoice date). If the vendor offers an early payment discount (for example, 2/10 Net 30, meaning 2% discount if paid within 10 days), the AP Clerk must flag this in the ERP Priority Payment field and notify the Finance Director. All payments are processed in the weekly payment run every Thursday."
+    },
+    {
+      "id": "INV-011",
+      "question": "What should the AP Clerk do if a duplicate invoice is received?",
+      "answer": "If a duplicate invoice is received — meaning an invoice with the same vendor name, invoice number, and invoice amount has already been logged in the ERP — the AP Clerk must NOT log it again. The AP Clerk must mark the duplicate physical invoice with a red 'DUPLICATE' stamp, scan it, and attach it to the original invoice record in the ERP. The AP Clerk must notify the vendor by email within 1 business day that a duplicate invoice was received and that it will not be processed. The duplicate record is logged in the Duplicate Invoice Register (shared drive: Finance > AP > Duplicate Register)."
+    },
+    {
+      "id": "INV-012",
+      "question": "Where are physical invoices stored after processing?",
+      "answer": "After an invoice is fully processed and paid, the physical invoice must be filed in the AP Filing Cabinet located in Room 204. Invoices are filed alphabetically by vendor name, then chronologically by invoice date within each vendor section. Physical invoices must be retained for a minimum of 7 years in accordance with ABC Company's Document Retention Policy (Policy No. FIN-DRP-001). After 7 years, invoices are destroyed using the cross-cut shredder in Room 204 — they must never be placed in the general recycling bin."
+    },
+    {
+      "id": "INV-013",
+      "question": "Who do I contact if the ERP system is unavailable when I need to log an invoice?",
+      "answer": "If the ERP system is unavailable, the AP Clerk must use the Manual Invoice Log Sheet (Form AP-01), which is kept in the top drawer of every AP desk. The AP Clerk fills in all required fields on the paper form, signs and dates it, and gives it to the AP Supervisor for counter-signature. The physical invoice is placed in the 'System Down' tray. Once the ERP system is restored, all manual entries must be entered into the ERP within 4 business hours, and the manual form must be attached as a scanned document to the ERP record."
+    },
+    {
+      "id": "INV-014",
+      "question": "What currency must invoices be recorded in within the ERP system?",
+      "answer": "Invoices must be recorded in their original invoice currency in the ERP system. The ERP system will automatically convert the amount to AED (UAE Dirham) using the exchange rate loaded into the system every Monday morning by the Finance team. If an invoice is received in a currency not supported by the ERP, the AP Clerk must contact the Finance Manager to manually enter the exchange rate before the invoice can be processed. ABC Company does not accept invoices in cryptocurrency."
+    },
+    {
+      "id": "INV-015",
+      "question": "What is the correct procedure if an invoice amount does not match the goods received?",
+      "answer": "If the invoice amount does not match the value of goods received (confirmed by the Goods Received Note, or GRN, from the Warehouse team), the AP Clerk must place the invoice on hold in the ERP by changing its status to 'GRN Mismatch'. The AP Clerk then raises a Goods Receipt Query Form (Form AP-09) and sends it to the Warehouse Manager and the vendor simultaneously within 1 business day. The invoice cannot be approved until the GRN Mismatch is resolved and the Warehouse Manager signs off on the corrected amount in the ERP system."
+    }
+  ]
+}

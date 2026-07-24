@@ -1,0 +1,11 @@
+﻿node_modules/
+.env
+backend/.env
+backend/secret.json
+backend/testtoken.json
+backend/test2.json
+backend/test3.json
+backend/__pycache__/
+*.pyc
+frontend-vite/node_modules/
+frontend-vite/dist/

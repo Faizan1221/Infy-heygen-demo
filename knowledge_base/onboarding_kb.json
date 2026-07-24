@@ -1,0 +1,84 @@
+{
+  "company": "ABC Company",
+  "process": "Employee Onboarding",
+  "version": "1.0",
+  "last_updated": "2026-06-22",
+  "sub_process": "New Employee Orientation",
+  "qa_pairs": [
+    {
+      "id": "ONB-001",
+      "question": "What is the first thing I should do on my first day at ABC Company?",
+      "answer": "On your first day at ABC Company, you must report to the HR Department on the ground floor at 9:00 AM. Bring your original ID documents for verification. HR will provide you with your employee ID card, access badge, and a copy of the Employee Handbook. You will then be introduced to your line manager who will take you to your workstation and introduce you to your team."
+    },
+    {
+      "id": "ONB-002",
+      "question": "What are the standard working hours at ABC Company?",
+      "answer": "The standard working hours at ABC Company are 9:00 AM to 5:00 PM, Monday to Friday. The total working hours per day are 8 hours, including a 1-hour lunch break from 1:00 PM to 2:00 PM. Employees are expected to be at their workstation and ready to work by 9:00 AM. Any variations to working hours must be approved in writing by the line manager."
+    },
+    {
+      "id": "ONB-003",
+      "question": "Which days are considered weekends or days off at ABC Company?",
+      "answer": "At ABC Company, Saturday and Sunday are official rest days. Employees are not required to work on weekends unless specifically requested by management with prior written notice. Public holidays declared by the government are also observed as official days off. A full list of public holidays is published on the company intranet at the beginning of each year."
+    },
+    {
+      "id": "ONB-004",
+      "question": "Is there a grace period if I arrive late at ABC Company?",
+      "answer": "ABC Company allows a grace period of 10 minutes for late arrival. If an employee arrives after 9:10 AM without prior approval, it is recorded as a late arrival in the attendance system. Three late arrivals in a single month will result in a formal warning from HR. Habitual lateness may result in disciplinary action as outlined in the ABC Company Disciplinary Policy (Policy No. HR-DIS-002)."
+    },
+    {
+      "id": "ONB-005",
+      "question": "How do I request leave or time off at ABC Company?",
+      "answer": "To request leave at ABC Company, you must submit a Leave Request Form (Form HR-01) through the HR portal at least 5 business days in advance for planned leave. The form must be approved by your line manager and then submitted to HR for final processing. Emergency leave must be communicated to your line manager by phone or email on the same day, followed by a completed Form HR-01 upon return. Leave requests are subject to business requirements and are not guaranteed."
+    },
+    {
+      "id": "ONB-006",
+      "question": "What is the dress code at ABC Company?",
+      "answer": "ABC Company enforces a smart business casual dress code from Monday to Thursday. On Fridays, employees may dress in smart casual attire. Clothing must be clean, neat, and professional at all times. Torn clothing, beachwear, and sportswear are not permitted in the office. Employees working in operational or warehouse areas must wear the designated safety gear and uniform provided by the company at all times."
+    },
+    {
+      "id": "ONB-007",
+      "question": "When and how will I get paid at ABC Company?",
+      "answer": "Salaries at ABC Company are paid on the 28th of every month directly into the employee's registered bank account. If the 28th falls on a weekend or public holiday, payment is made on the last working day before the 28th. Payslips are sent electronically to each employee's company email address on the day of payment. For any payroll queries, employees must contact the Payroll team at payroll@abccompany.com within 5 business days of receiving their payslip."
+    },
+    {
+      "id": "ONB-008",
+      "question": "What is the probation period at ABC Company?",
+      "answer": "All new employees at ABC Company are subject to a probation period of 3 months from their joining date. During probation, performance is reviewed monthly by the line manager. At the end of the 3-month period, HR will conduct a formal probation review meeting. Successful completion of probation is confirmed in writing by HR. If performance is unsatisfactory, the probation period may be extended by up to 3 additional months at the discretion of management."
+    },
+    {
+      "id": "ONB-009",
+      "question": "How do I get my employee ID and access badge?",
+      "answer": "Your employee ID and access badge are issued by the HR Department on your first day of joining. You must present your original passport or national ID for verification before the badge is issued. Your access badge grants entry to the main office areas. Access to restricted areas such as the server room and finance vault requires additional approval from the department head and must be requested via the IT Helpdesk using Form IT-03."
+    },
+    {
+      "id": "ONB-010",
+      "question": "What equipment will I receive as a new employee at ABC Company?",
+      "answer": "On your first day, the IT Department will provide you with a laptop, a company mobile phone if applicable to your role, and login credentials for all required systems including email, the HR portal, and the ERP system. You must sign the Equipment Acknowledgement Form (Form IT-01) confirming receipt of all items. All company equipment must be used strictly for business purposes. Loss or damage to company equipment must be reported to IT immediately using the IT Helpdesk portal."
+    },
+    {
+      "id": "ONB-011",
+      "question": "Who is my point of contact if I have HR-related questions?",
+      "answer": "For any HR-related questions, your primary point of contact is your assigned HR Business Partner. Their name and contact details are provided in your welcome email on your first day. For general HR queries, you can also email hr@abccompany.com or visit the HR Department on the ground floor between 9:00 AM and 4:00 PM, Monday to Friday. Urgent matters can be escalated to the HR Manager directly."
+    },
+    {
+      "id": "ONB-012",
+      "question": "What is the annual leave entitlement at ABC Company?",
+      "answer": "All full-time employees at ABC Company are entitled to 21 working days of annual leave per calendar year. Annual leave begins to accrue from the first day of employment at a rate of 1.75 days per month. During the probation period, annual leave accrues but cannot be taken unless approved by the HR Manager in exceptional circumstances. Unused annual leave of up to 5 days may be carried forward to the following year. Any leave exceeding 5 days that is not taken will be forfeited."
+    },
+    {
+      "id": "ONB-013",
+      "question": "What should I do if I am sick and cannot come to work?",
+      "answer": "If you are unable to attend work due to illness, you must notify your line manager by phone or WhatsApp before 9:00 AM on the day of absence. For absences of 1 to 2 days, a self-declaration form (Form HR-04) must be submitted upon return. For absences of 3 or more consecutive days, a medical certificate from a registered doctor is mandatory and must be submitted to HR within 2 business days of returning to work. Sick leave entitlement is 15 days per year as per ABC Company's Sick Leave Policy (Policy No. HR-SL-003)."
+    },
+    {
+      "id": "ONB-014",
+      "question": "Is there a canteen or lunch facility at ABC Company?",
+      "answer": "ABC Company provides a subsidised staff canteen on the second floor, open from 12:00 PM to 2:00 PM on all working days. Employees receive a daily meal allowance of AED 15 loaded onto their employee ID card, which can be used at the canteen. Additional purchases beyond the allowance can be paid by cash or card. There is also a pantry area on each floor equipped with a coffee machine, microwave, and refrigerator for employee use."
+    },
+    {
+      "id": "ONB-015",
+      "question": "What is the company's policy on using personal mobile phones during work hours?",
+      "answer": "ABC Company allows employees to use personal mobile phones during designated break times only — specifically during the morning break, lunch break, and afternoon break. Personal phone use at the workstation during working hours is discouraged and may result in a formal reminder from the line manager. Employees must ensure their phones are on silent mode at all times in the office. In client-facing roles or during meetings, phones must be completely switched to silent and put away."
+    }
+  ]
+}

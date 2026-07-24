@@ -1,0 +1,8 @@
+﻿.env
+__pycache__/
+*.pyc
+
+secret.json
+testtoken.json
+test2.json
+test3.json
