@@ -13,6 +13,7 @@ CORS(app, origins=[
     "https://infylearn-heygen-demo.netlify.app",
     "http://localhost:3000",
     "http://localhost:5173",
+    "http://localhost:5000",
 ])  # Allows the frontend to talk to this server
 
 openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
